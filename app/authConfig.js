@@ -9,6 +9,7 @@ const msalConfig = {
         clientId: "bd4f9a94-b8cb-4799-b667-d7c472e6b16a",
         // Full directory URL, in the form of https://login.microsoftonline.com/<tenant-id>
         authority: "https://fs.user.twoberry.local/adfs/",
+        knownAuthorities: [fs.user.twoberry.local],
         // Full redirect URL, in form of http://localhost:3000
         redirectUri: "http://localhost:3000",
     },
