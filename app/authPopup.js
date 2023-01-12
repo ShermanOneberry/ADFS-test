@@ -95,21 +95,11 @@ function getTokenPopup(request) {
 }
 
 function seeProfile() {
-    getTokenPopup(loginRequest)
-        .then(response => {
-            callMSGraph(graphConfig.graphMeEndpoint, response.accessToken, updateUI);
-        }).catch(error => {
-            console.error(error);
-        });
+    //TODO: Replace with dummy
 }
 
 function readMail() {
-    getTokenPopup(tokenRequest)
-        .then(response => {
-            callMSGraph(graphConfig.graphMailEndpoint, response.accessToken, updateUI);
-        }).catch(error => {
-            console.error(error);
-        });
+    //TODO: Replace with dummy
 }
 
 selectAccount();
